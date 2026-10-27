@@ -1,0 +1,182 @@
+{
+  "brownian": {
+    "parameters": {
+      "lambda": 1.0,
+      "sigma": 1,
+      "T": 1.0,
+      "r": 0,
+      "mu": 0
+    },
+    "constant_closed_form": 1.3285764327711462,
+    "constant_independent_quadrature": 1.328576432771146,
+    "q_integrated_mass": 0.9213503964748516,
+    "A_T": 0.9213503964748575,
+    "D_T": 1.735802469067435,
+    "conditional_no_reset_weight": 0.5307921914466776,
+    "mean_excess_1_over_beta": 0.7071067811865475
+  },
+  "reflection_brackets": [
+    {
+      "u": 2.0,
+      "scaled_probability_lower_bound": 1.2266491628554856,
+      "scaled_probability_upper_bound": 1.9964603325471466,
+      "finite_u_leading_term": 1.3230364918157484,
+      "limiting_constant": 1.3285764327711462
+    },
+    {
+      "u": 3.0,
+      "scaled_probability_lower_bound": 1.3157415567601434,
+      "scaled_probability_upper_bound": 1.5036240863920318,
+      "finite_u_leading_term": 1.3283476297190546,
+      "limiting_constant": 1.3285764327711462
+    },
+    {
+      "u": 4.0,
+      "scaled_probability_lower_bound": 1.3278310801411923,
+      "scaled_probability_upper_bound": 1.3459626611051532,
+      "finite_u_leading_term": 1.3285723525800224,
+      "limiting_constant": 1.3285764327711462
+    },
+    {
+      "u": 5.0,
+      "scaled_probability_lower_bound": 1.3285580134682695,
+      "scaled_probability_upper_bound": 1.329233023232572,
+      "finite_u_leading_term": 1.3285764030801128,
+      "limiting_constant": 1.3285764327711462
+    },
+    {
+      "u": 6.0,
+      "scaled_probability_lower_bound": 1.328576247708027,
+      "scaled_probability_upper_bound": 1.328585803716946,
+      "finite_u_leading_term": 1.3285764326858054,
+      "limiting_constant": 1.3285764327711462
+    }
+  ],
+  "onset_of_asymptotic_regime": [
+    {
+      "lambda": 0.25,
+      "T": 0.25,
+      "lambda_T": 0.0625,
+      "beta": 0.7071067811865476,
+      "D_T": 0.6752176803208237,
+      "A_over_D": 0.9451221638344849,
+      "b_1pct_bound_6_6": 1.42,
+      "beta_b_1pct_bound_6_6": 1.0,
+      "b_1pct_sharp_bound": 1.32,
+      "beta_b_1pct_sharp_bound": 0.93,
+      "two_lambda_T": 0.125
+    },
+    {
+      "lambda": 0.25,
+      "T": 1.0,
+      "lambda_T": 0.25,
+      "beta": 0.7071067811865476,
+      "D_T": 0.9300352765468232,
+      "A_over_D": 0.8174420455633633,
+      "b_1pct_bound_6_6": 3.53,
+      "beta_b_1pct_bound_6_6": 2.5,
+      "b_1pct_sharp_bound": 3.18,
+      "beta_b_1pct_sharp_bound": 2.25,
+      "two_lambda_T": 0.5
+    },
+    {
+      "lambda": 0.25,
+      "T": 4.0,
+      "lambda_T": 1.0,
+      "beta": 0.7071067811865476,
+      "D_T": 1.735802469067435,
+      "A_over_D": 0.5307921914466776,
+      "b_1pct_bound_6_6": 9.32,
+      "beta_b_1pct_bound_6_6": 6.59,
+      "b_1pct_sharp_bound": 8.13,
+      "beta_b_1pct_sharp_bound": 5.75,
+      "two_lambda_T": 2.0
+    },
+    {
+      "lambda": 1.0,
+      "T": 0.25,
+      "lambda_T": 0.25,
+      "beta": 1.4142135623730951,
+      "D_T": 0.9300352765468232,
+      "A_over_D": 0.8174420455633633,
+      "b_1pct_bound_6_6": 1.76,
+      "beta_b_1pct_bound_6_6": 2.49,
+      "b_1pct_sharp_bound": 1.59,
+      "beta_b_1pct_sharp_bound": 2.25,
+      "two_lambda_T": 0.5
+    },
+    {
+      "lambda": 1.0,
+      "T": 1.0,
+      "lambda_T": 1.0,
+      "beta": 1.4142135623730951,
+      "D_T": 1.735802469067435,
+      "A_over_D": 0.5307921914466776,
+      "b_1pct_bound_6_6": 4.66,
+      "beta_b_1pct_bound_6_6": 6.59,
+      "b_1pct_sharp_bound": 4.06,
+      "beta_b_1pct_sharp_bound": 5.74,
+      "two_lambda_T": 2.0
+    },
+    {
+      "lambda": 1.0,
+      "T": 4.0,
+      "lambda_T": 4.0,
+      "beta": 1.4142135623730951,
+      "D_T": 4.74980858896969,
+      "A_over_D": 0.21004238672402697,
+      "b_1pct_bound_6_6": 13.92,
+      "beta_b_1pct_bound_6_6": 19.69,
+      "b_1pct_sharp_bound": 12.29,
+      "beta_b_1pct_sharp_bound": 17.38,
+      "two_lambda_T": 8.0
+    },
+    {
+      "lambda": 4.0,
+      "T": 0.25,
+      "lambda_T": 1.0,
+      "beta": 2.8284271247461903,
+      "D_T": 1.735802469067435,
+      "A_over_D": 0.5307921914466776,
+      "b_1pct_bound_6_6": 2.34,
+      "beta_b_1pct_bound_6_6": 6.62,
+      "b_1pct_sharp_bound": 2.04,
+      "beta_b_1pct_sharp_bound": 5.77,
+      "two_lambda_T": 2.0
+    },
+    {
+      "lambda": 4.0,
+      "T": 1.0,
+      "lambda_T": 4.0,
+      "beta": 2.8284271247461903,
+      "D_T": 4.74980858896969,
+      "A_over_D": 0.21004238672402697,
+      "b_1pct_bound_6_6": 6.96,
+      "beta_b_1pct_bound_6_6": 19.69,
+      "b_1pct_sharp_bound": 6.15,
+      "beta_b_1pct_sharp_bound": 17.39,
+      "two_lambda_T": 8.0
+    },
+    {
+      "lambda": 4.0,
+      "T": 4.0,
+      "lambda_T": 16.0,
+      "beta": 2.8284271247461903,
+      "D_T": 16.749999999789967,
+      "A_over_D": 0.05970149207784539,
+      "b_1pct_bound_6_6": 24.15,
+      "beta_b_1pct_bound_6_6": 68.31,
+      "b_1pct_sharp_bound": 22.76,
+      "beta_b_1pct_sharp_bound": 64.38,
+      "two_lambda_T": 32.0
+    }
+  ],
+  "random_reset_positions": {
+    "reset_law": "Uniform[-1,1]",
+    "m_rho": 1.3682988720085907,
+    "coefficient_H": 2.375096560454698,
+    "coefficient_H_and_Y_T_positive": 1.8178896343379567,
+    "no_reset_weight": 0.5307921914466776
+  },
+  "interpretation": "Brackets keep first-cycle exceedances exactly and add a union bound for later cycles. Quadrature is floating point, not interval-certified."
+}

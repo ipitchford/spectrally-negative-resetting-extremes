@@ -1,0 +1,22 @@
+name: Replay
+on:
+  push:
+  pull_request:
+jobs:
+  quick:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Check SHA256SUMS
+        run: sha256sum -c SHA256SUMS
+      - name: Semantic negative controls (standard library)
+        run: python -B -O negative_controls.py
+      - name: Install packages
+        run: python -m pip install -r requirements.txt
+      - name: Deterministic checks
+        run: |
+          python -B code/independent_checks.py --out /tmp/q1
+          python -B code/profile_checks.py --out /tmp/q2

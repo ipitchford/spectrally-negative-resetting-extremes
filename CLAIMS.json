@@ -1,0 +1,69 @@
+{
+ "schemaVersion": "1.0",
+ "release": "spectrally-negative-resetting-extremes",
+ "version": "1.0.0-candidate",
+ "doi": "10.5281/zenodo.23689354",
+ "conceptDoi": "10.5281/zenodo.23689353",
+ "creator": "Anonymous",
+ "status": "unrefereed-candidate",
+ "manuscript": "levy_reset_extremes.pdf",
+ "sources": [
+  {
+   "citation": "K. Dębicki, E. Hashorva and Z. Michna, Distributional and extremal behaviour of Brownian motion with exponential resetting, Methodology and Computing in Applied Probability 28(3), article 79 (2026)",
+   "doi": "10.1007/s11009-026-10316-4",
+   "openVersion": "arXiv:2603.03050v3",
+   "question": "Remark 3 (constant C_T for terminal threshold 0)"
+  }
+ ],
+ "boundary": "'proof' means a complete written proof in the manuscript, not formal verification; 'numerical' means floating-point or Monte Carlo computation, not an enclosure. Internal AI-assisted review is not peer review or independent reproduction.",
+ "claims": [
+  {
+   "id": "endpoint-decomposition",
+   "location": "Theorem 3.1",
+   "status": "proof",
+   "statement": "For every u>r and gamma>beta, the variation distance between P(H_T>u, Y_T in .) and e^{-beta(u-r)}{Q_T(.-u)+K_T} is at most (a beta/(gamma-beta)+lambda T) e^{T psi(gamma)-gamma(u-r)}, uniformly over all Borel endpoint sets."
+  },
+  {
+   "id": "conditional-path",
+   "location": "Theorem 5.1",
+   "status": "proof",
+   "statement": "Given H_T>u, the marked path is within 2e^{beta b}R_gamma/D_T in total variation of an explicit sampler: first-reset mark with weights lambda A(s)/D_T and A(T)/D_T, maximum-tilted pre-reset path, independent Exp(beta) overshoot."
+  },
+  {
+   "id": "marks-overshoot",
+   "location": "Propositions 5.2-5.3",
+   "status": "proof",
+   "statement": "Quantitative bounds for the overshoot, first-reset mark and fixed terminal thresholds; E[H_T-u | H_T>u] -> 1/beta for every input; J1 path limit on the scale of u."
+  },
+  {
+   "id": "brownian-constant",
+   "location": "Corollary 6.1",
+   "status": "proof",
+   "statement": "For driftless Brownian motion C_T = e^{beta r}[Phi(sqrt(2 lambda T)) + lambda int_0^T Phi(sqrt(2 lambda s)) p_{T-s}(0) ds]; both bounds of Debicki-Hashorva-Michna Remark 3 are strict; C_1 = 1.3285764327711... at lambda=T=1, r=0."
+  },
+  {
+   "id": "fluctuation-identity",
+   "location": "Proposition 7.1",
+   "status": "proof",
+   "statement": "D_T = a(1 + beta E^(beta) M_T); a standard fluctuation-theoretic consequence."
+  },
+  {
+   "id": "bv-exactness",
+   "location": "Corollary 7.2",
+   "status": "proof",
+   "statement": "For xi_t = dt - S_t the decomposition is exact when u - r >= dT."
+  },
+  {
+   "id": "random-reset",
+   "location": "Theorem 7.3",
+   "status": "proof",
+   "statement": "With i.i.d. reset positions of law rho and m(gamma)<inf for some gamma>beta, the leading measure is m(beta)e^{-beta u}{Q_T(.-u)+K^rho_T}; explicit path sampler (initial reset position tilted by e^{beta z}, mark law unchanged) and mark bounds."
+  },
+  {
+   "id": "numerics",
+   "location": "Section 8",
+   "status": "numerical",
+   "statement": "Closed form vs quadrature, floating-point reflection brackets and exact-sampling Monte Carlo agree with the theory."
+  }
+ ]
+}

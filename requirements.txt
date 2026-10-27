@@ -1,0 +1,4 @@
+# Python 3.12 (see .python-version); replay with: uv run --python 3.12 --with-requirements requirements.txt python -I code/reproduce.py --out NEWDIR
+numpy==2.3.5
+scipy==1.17.0
+matplotlib==3.10.8

@@ -1,0 +1,7 @@
+Authoring and replay environment (27 October 2026)
+OS: macOS (Apple silicon)
+Python 3.12.11; numpy 2.3.5; scipy 1.17.0; matplotlib 3.10.8 (requirements.txt; checks/runtime_versions.json)
+LaTeX: pdfLaTeX (TeX Live), three passes
+code/reproduce.py --out NEW_EMPTY_DIR [--pdf] [--chunks N] reruns every check into a new directory; it refuses checks/, figures/ and non-empty directories.
+negative_controls.py needs only the Python standard library.
+Clean replay from a fresh copy of the final package (chunks 2, i.e. reduced Monte Carlo) passed; deterministic JSON outputs equal checks/ to 1e-9 relative. Monte Carlo outputs use fixed seeds; the full-size run (chunks 40) needs about 2 GB of RAM.

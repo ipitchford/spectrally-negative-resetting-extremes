@@ -1,0 +1,44 @@
+{
+  "title": "Fixed-horizon extremes of spectrally negative Lévy processes with Poisson resetting",
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "description": "<p><strong>Unrefereed research candidate.</strong> A spectrally negative Lévy process (no upward jumps) is reset to a home position at the times of a Poisson clock and started in its long-run state. Given that its maximum over a fixed window is very high, where does it end? Up to an error smaller than any exponential order, either no reset has happened and it ends near the peak, or a reset has happened and it ends at an ordinary level. The paper proves an explicit total-variation error bound for this two-profile decomposition, uniform over all endpoint sets, gives the conditional law of the whole path (with an independent exponential overshoot), quantitative overshoot and terminal-threshold statements, exactness for bounded-variation inputs, and an extension to random reset positions. For Brownian motion it supplies the constant left unspecified in Remark 3 of Dębicki, Hashorva and Michna (2026) and proves that their two bounds are strict. The leading constant itself is a standard first-cycle computation.</p><p>The archive contains the manuscript (PDF and LaTeX), Python check scripts (closed forms, quadrature, reflection brackets, an exact-sampling Monte Carlo of the original process), committed outputs and figures, a replay script, semantic negative controls and SHA-256 sums. Assurance: written proofs; producer-side replay from a clean copy; internal AI-assisted review, AI-assisted proof audits and a verification re-review. This is not peer review, independent reproduction or formal verification. Creator: Anonymous. Prose, manuscript and data CC0-1.0; code MIT.</p>",
+  "creators": [
+    {
+      "name": "Anonymous"
+    }
+  ],
+  "version": "1.0.0-candidate",
+  "doi": "10.5281/zenodo.23689354",
+  "publication_date": "2026-10-27",
+  "access_right": "open",
+  "license": "cc-zero",
+  "keywords": [
+    "stochastic resetting",
+    "spectrally negative Lévy processes",
+    "extremes",
+    "running maximum",
+    "total variation",
+    "Wiener–Hopf factorisation",
+    "Esscher transform",
+    "Brownian motion"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/ipitchford/spectrally-negative-resetting-extremes/tree/v1.0.0-candidate",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://evidencepress.org/releases/spectrally-negative-resetting-extremes/",
+      "relation": "isDocumentedBy",
+      "scheme": "url"
+    },
+    {
+      "identifier": "10.1007/s11009-026-10316-4",
+      "relation": "references",
+      "scheme": "doi"
+    }
+  ],
+  "notes": "Original code (Python scripts, CI workflow) is released under the MIT licence; see LICENSES.md in the archive."
+}

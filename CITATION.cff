@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "Please cite this versioned research candidate by its DOI."
+title: "Fixed-horizon extremes of spectrally negative Lévy processes with Poisson resetting"
+type: software
+authors:
+  - name: Anonymous
+version: 1.0.0-candidate
+doi: 10.5281/zenodo.23689354
+date-released: 2026-10-27
+repository-code: "https://github.com/ipitchford/spectrally-negative-resetting-extremes"
+url: "https://evidencepress.org/releases/spectrally-negative-resetting-extremes/"
+license: CC0-1.0
+keywords:
+  - stochastic resetting
+  - spectrally negative Lévy processes
+  - extremes
+  - total variation
+abstract: "For a stationary spectrally negative Lévy process with Poisson resetting, the joint law of the fixed-horizon maximum and the endpoint is given, as the threshold grows, by two explicit profiles (no reset: ends near the peak; reset: ends at an ordinary level) with an explicit total-variation error uniform over all endpoint sets; the conditional path law, exactness for bounded-variation inputs and random reset positions follow. For Brownian motion this supplies the constant in Remark 3 of Dębicki, Hashorva and Michna (2026) and proves their bounds strict. Unrefereed candidate. Original code is MIT-licensed; see LICENSES.md."
+references:
+  - type: article
+    title: "Distributional and extremal behaviour of Brownian motion with exponential resetting"
+    authors:
+      - family-names: Dębicki
+        given-names: K.
+      - family-names: Hashorva
+        given-names: E.
+      - family-names: Michna
+        given-names: Z.
+    journal: "Methodology and Computing in Applied Probability"
+    volume: 28
+    year: 2026
+    doi: 10.1007/s11009-026-10316-4

@@ -1,0 +1,198 @@
+{
+ "schemaVersion": "1.0",
+ "provenance": "Compiled 27 October 2026 at publication from the dated novelty check in the manuscript, the first-round domain review's literature check (20-27 October 2026) and the final proof audits. Bounded searches; not a priority claim.",
+ "contributionMap": [
+  {
+   "claim": "Uniform total-variation two-profile expansion of P(H_T>u, Y_T in .) for stationary spectrally negative Lévy processes with Poisson resetting",
+   "unit": "statement",
+   "paperLocation": "Theorem 3.1",
+   "searches": [
+    {
+     "date": "2026-10-27",
+     "query": "works citing Debicki Hashorva Michna 2026 (DOI 10.1007/s11009-026-10316-4)",
+     "corpus": "Crossref cited-by, OpenCitations COCI, Semantic Scholar"
+    },
+    {
+     "date": "2026-10-27",
+     "query": "resetting supremum maximum Lévy 2026",
+     "corpus": "arXiv API"
+    },
+    {
+     "date": "2026-10-20",
+     "query": "stochastic resetting extreme value maximum renewal",
+     "corpus": "Crossref, Semantic Scholar"
+    }
+   ],
+   "closestPriorWork": "Dębicki-Hashorva-Michna 2026 Theorems 5-6 (scalar asymptotics, Brownian); Singh-Pal 2021 (renewal formulas, start at reset point); Majumdar et al. 2022 (records)",
+   "verdict": "new-in-bounded-search"
+  },
+  {
+   "claim": "Constant C_T of DHM Remark 3 and strictness of their bounds",
+   "unit": "identification",
+   "paperLocation": "Corollary 6.1",
+   "searches": [
+    {
+     "date": "2026-10-27",
+     "query": "Remark 3 constant Brownian resetting conjecture citing works",
+     "corpus": "Crossref, Semantic Scholar, arXiv"
+    }
+   ],
+   "closestPriorWork": "DHM 2026 Remark 3 (bounds only); arXiv v3 27 Sep 2026 leaves it open",
+   "verdict": "new-in-bounded-search"
+  },
+  {
+   "claim": "First-cycle (renewal) decomposition plus exact exponential stationary tail via Wiener-Hopf at an exponential time",
+   "unit": "method",
+   "paperLocation": "Section 3; Lemma 3.2",
+   "searches": [
+    {
+     "date": "2026-10-20",
+     "query": "Wiener-Hopf factorisation exponential time spectrally negative supremum exponential",
+     "corpus": "textbooks (Kyprianou 2014; Kuznetsov-Kyprianou-Rivero 2012)"
+    },
+    {
+     "date": "2026-10-20",
+     "query": "renewal first reset decomposition resetting maximum",
+     "corpus": "arXiv, Crossref"
+    }
+   ],
+   "closestPriorWork": "DHM 2026 proof of Theorem 5 (first-cycle split); Kyprianou 2014 and KKR 2012 (Wiener-Hopf)",
+   "verdict": "known-cited"
+  },
+  {
+   "claim": "D_T = a(1+beta E^(beta) M_T)",
+   "unit": "proof",
+   "paperLocation": "Proposition 7.1",
+   "searches": [
+    {
+     "date": "2026-10-27",
+     "query": "first passage Esscher layer-cake supremum identity",
+     "corpus": "textbooks"
+    }
+   ],
+   "closestPriorWork": "Standard fluctuation theory (first passage, exponential tilting)",
+   "verdict": "partially-known-cited"
+  },
+  {
+   "claim": "Random reset positions (resetting to a random location)",
+   "unit": "object",
+   "paperLocation": "Theorem 7.3",
+   "searches": [
+    {
+     "date": "2026-10-27",
+     "query": "stochastic resetting random reset position distribution extremes",
+     "corpus": "arXiv, Semantic Scholar"
+    }
+   ],
+   "closestPriorWork": "Physics literature on resetting to random positions (Evans-Majumdar-Schehr 2020 review); no fixed-horizon extreme expansion found",
+   "verdict": "new-in-bounded-search"
+  }
+ ],
+ "sourcesReadInFull": [
+  {
+   "citation": "Dębicki, Hashorva, Michna 2026, MCAP 28(3):79; arXiv:2603.03050v3",
+   "usedFor": "source question, setting, Theorems 5-6, Remark 3",
+   "readWhat": "Model section, Theorems 5 and 6, Remark 3 and display of the bounds, checked against arXiv v3",
+   "date": "2026-10-27",
+   "evidenceLocator": "https://arxiv.org/abs/2603.03050v3, Remark 3"
+  },
+  {
+   "citation": "Kuznetsov, Kyprianou, Rivero 2012, Lévy Matters II pp. 97-186",
+   "usedFor": "Wiener-Hopf at exponential time; resolvent side remark",
+   "readWhat": "Section 2.1 (Wiener-Hopf factorisation); theorem pointer for the resolvent formula not re-checked",
+   "date": "2026-10-20",
+   "evidenceLocator": "https://doi.org/10.1007/978-3-642-31407-0_2, Section 2.1"
+  },
+  {
+   "citation": "Singh and Pal 2021, Phys. Rev. E 103:052119",
+   "usedFor": "comparison of prior results (Table 1)",
+   "readWhat": "Setting and main renewal formulas for the maximum and its time",
+   "date": "2026-10-20",
+   "evidenceLocator": "https://doi.org/10.1103/PhysRevE.103.052119"
+  }
+ ],
+ "limitationTriage": [
+  {
+   "limitation": "Upward jumps excluded",
+   "closingQuestion": "Does a known Cramér-type result give exact exponential continuation with upward jumps?",
+   "triedOrSearched": "Analysed in 'Why no upward jumps': the exact continuation and memoryless overshoot fail",
+   "estimatedCost": "weeks",
+   "cheap": false,
+   "decision": "OPEN",
+   "reasonOpen": "Needs a different method (ladder-overshoot laws; single big jump)",
+   "whyNotClosedNow": ""
+  },
+  {
+   "limitation": "Renewal (non-Poisson) reset clocks",
+   "closingQuestion": "Does reweighting by stationary age and hazard close it?",
+   "triedOrSearched": "Outlined in Section 9",
+   "estimatedCost": "days",
+   "cheap": false,
+   "decision": "OPEN",
+   "reasonOpen": "Not proved",
+   "whyNotClosedNow": ""
+  },
+  {
+   "limitation": "Nothing uniform in growing horizons T",
+   "closingQuestion": "Joint (u,T) limits or Poisson clumping",
+   "triedOrSearched": "Error contains e^{T psi(gamma)}",
+   "estimatedCost": "weeks",
+   "cheap": false,
+   "decision": "OPEN",
+   "reasonOpen": "New regime",
+   "whyNotClosedNow": ""
+  },
+  {
+   "limitation": "Mean overshoot needed uniform integrability",
+   "closingQuestion": "Does Theorem 3.1 at u and u+v give a uniform exponential tail?",
+   "triedOrSearched": "Proof audit supplied the 3e^{-beta v} bound",
+   "estimatedCost": "30 min",
+   "cheap": true,
+   "decision": "CLOSED"
+  },
+  {
+   "limitation": "Random-reset path/mark transfer not stated precisely",
+   "closingQuestion": "State the sampler and bounds explicitly",
+   "triedOrSearched": "Proof audits gave exact replacement bounds",
+   "estimatedCost": "1 h",
+   "cheap": true,
+   "decision": "CLOSED"
+  },
+  {
+   "limitation": "Heavy left tail of Q_T for heavy negative jumps not quantified",
+   "closingQuestion": "Rate of Q_T((-inf,-x]) for stable inputs",
+   "triedOrSearched": "Listed as open problem",
+   "estimatedCost": "days",
+   "cheap": false,
+   "decision": "OPEN",
+   "reasonOpen": "Not proved",
+   "whyNotClosedNow": ""
+  },
+  {
+   "limitation": "Reflection brackets are floating point, not interval-certified",
+   "closingQuestion": "Interval arithmetic for the brackets",
+   "triedOrSearched": "Not needed for any theorem; brackets are supporting numerics",
+   "estimatedCost": "3 h",
+   "cheap": false,
+   "decision": "OPEN",
+   "reasonOpen": "Supporting numerics only",
+   "whyNotClosedNow": ""
+  }
+ ],
+ "extensionScout": {
+  "by": "internal AI-assisted first-round review (editor, methodology, domain, perspective, devil's advocate)",
+  "date": "2026-10-27",
+  "proposals": [
+   "prove one extension: random reset positions",
+   "exact-sampling Monte Carlo of the original process",
+   "onset of the asymptotic regime in lambda T",
+   "bounded-variation exactness"
+  ],
+  "actions": [
+   "Theorem 7.3 proved and corrected in final round",
+   "code/exact_mc.py and bv_replicate.py added",
+   "Section 6.1 and Table 4 added",
+   "Corollary 7.2 retained as sharp special case"
+  ]
+ }
+}
