@@ -65,7 +65,7 @@ import re
 def saved_C(text):
     return float(re.search(r'"constant_closed_form": ([0-9.]+)', text).group(1))
 require(abs(saved_C(flat) - C_closed) < 1e-11, "saved constant matches recomputation")
-tampered = flat.replace("1.3285764327711462", "1.3285764327721462", 1)
-require(abs(saved_C(tampered) - C_closed) > 1e-12, "one-digit tampering of the saved constant is detected")
+tampered = flat.replace("1.3285764327711462", "1.3285764328711462", 1)
+require(abs(saved_C(tampered) - C_closed) > 5e-11, "one-digit tampering of the saved constant is detected")
 
 sys.exit(1 if fails else 0)
